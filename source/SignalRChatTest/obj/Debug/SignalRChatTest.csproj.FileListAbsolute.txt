@@ -1,0 +1,1 @@
+C:\Users\CromptonR\Documents\VisualStudioPrototypes\SignalRChatTest\source\SignalRChatTest\obj\Debug\SignalRChatTest.csprojResolveAssemblyReference.cache
