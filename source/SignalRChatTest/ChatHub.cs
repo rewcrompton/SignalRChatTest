@@ -4,6 +4,7 @@ using System.Linq;
 using System.Web;
 using Microsoft.AspNet.SignalR;
 using Microsoft.AspNet.SignalR.Hubs;
+using SignalRChatTest.Models;
 
 namespace SignalRChatTest
 {
@@ -12,7 +13,12 @@ namespace SignalRChatTest
     {
         public void SendMessage(string message)
         {
-            Clients.All.hello();
+            Clients.All.processMessage(message);
+        }
+
+        public void SendMessageWithUserData(UserData userData, string message)
+        {
+            Clients.All.processMessageFromUser(userData, message);
         }
     }
 }
