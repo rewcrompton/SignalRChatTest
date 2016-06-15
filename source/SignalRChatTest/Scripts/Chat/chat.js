@@ -1,17 +1,21 @@
-﻿(function () {
+﻿$(document).ready(function () {
     // Declare a proxy to reference the hub.
     var chat = $.connection.theChatHub;
     // Create a function that the hub can call to broadcast messages.
-    chat.client.broadcastMessage = function (name, message) {
+    chat.client.broadcastMessage = function (username, message) {
         // Html encode display name and message.
-        var encodedName = $('<div />').text(name).html();
+        var encodedName = $('<div />').text(username).html();
         var encodedMsg = $('<div />').text(message).html();
         // Add the message to the page.
         $('#discussion').append('<li><strong>' + encodedName
             + '</strong>:&nbsp;&nbsp;' + encodedMsg + '</li>');
     };
+
     // Get the user name and store it to prepend to messages.
-    $('#displayname').val(prompt('Enter your name:', ''));
+    var name = prompt('Enter your name:', '');
+    $('#displayname').val(name);
+    ////document.getElementById("displayname").value = name
+
     // Set initial focus to message input box.
     $('#message').focus();
     // Start the connection.
@@ -23,4 +27,4 @@
             $('#message').val('').focus();
         });
     });
-})();
+});
