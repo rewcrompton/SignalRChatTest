@@ -1,0 +1,26 @@
+﻿@{
+    ViewBag.Title = "index";
+}
+<script src="Scripts/jquery-1.10.2.min.js"></script>
+<script src="Scripts/jquery.signalR-2.1.2.min.js"></script>
+<script src="signalr/hubs"></script>
+<script type="text/javascript" src="/Scripts/Chat/chat.js"></script>
+
+<head>
+    <title>SignalR Chat</title>
+    <style type="text/css">
+        .container {
+            border: thick solid #808080;
+            padding: 30px;
+            margin: 30px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <input type="text" id="message" />
+        <input type="button" id="sendmessage" value="Send" />
+        <input type="hidden" id="displayname" />
+        <ul id="discussion"></ul>
+    </div>
+</body>

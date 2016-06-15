@@ -1,4 +1,3 @@
-C:\Users\CromptonR\Documents\VisualStudioPrototypes\SignalRChatTest\source\SignalRChatTest\obj\Debug\SignalRChatTest.csprojResolveAssemblyReference.cache
 C:\Users\CromptonR\Documents\VisualStudioPrototypes\SignalRChatTest\source\SignalRChatTest\bin\SignalRChatTest.dll.config
 C:\Users\CromptonR\Documents\VisualStudioPrototypes\SignalRChatTest\source\SignalRChatTest\bin\SignalRChatTest.dll
 C:\Users\CromptonR\Documents\VisualStudioPrototypes\SignalRChatTest\source\SignalRChatTest\bin\SignalRChatTest.pdb
